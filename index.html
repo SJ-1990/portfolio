@@ -187,68 +187,61 @@
       letter-spacing:0.2px;
     }
 
-    /* ABOUT TABLE */
+    /* ABOUT GRID */
     
-    .about-table{
-    
-      margin-top:40px;
-    
-      display:flex;
-    
-      flex-direction:column;
-    
-      gap:18px;
-    }
-    
-    .about-row{
+    .about-grid{
     
       display:grid;
     
-      grid-template-columns:240px 1fr;
+      grid-template-columns:
+      repeat(auto-fit,minmax(280px,1fr));
     
-      gap:24px;
+      gap:22px;
     
-      padding:18px 22px;
+      margin-top:40px;
+    }
+    
+    .about-card{
     
       background:
-      rgba(255,255,255,0.72);
+      rgba(255,255,255,0.78);
+    
+      backdrop-filter:blur(10px);
     
       border:
       1px solid rgba(255,255,255,0.4);
     
-      border-radius:14px;
+      border-radius:18px;
     
-      backdrop-filter:blur(8px);
+      padding:28px;
     
       box-shadow:
-      0 4px 12px rgba(0,0,0,0.04);
+      0 6px 16px rgba(0,0,0,0.05);
+    
+      transition:0.3s;
     }
     
-    .about-label{
+    .about-card:hover{
     
-      font-weight:700;
+      transform:translateY(-4px);
+    }
+    
+    .about-card h3{
+    
+      font-size:24px;
+    
+      margin-bottom:16px;
     
       color:#0f172a;
     }
     
-    .about-value{
+    .about-card p{
     
-      color:#374151;
+      color:#4b5563;
     
-      line-height:1.8;
-    }
+      line-height:1.9;
     
-    /* MOBILE */
-    
-    @media(max-width:768px){
-    
-      .about-row{
-    
-        grid-template-columns:1fr;
-    
-        gap:10px;
-      }
-    
+      font-size:16px;
     }
     
     /* SKILLS */
@@ -787,47 +780,43 @@
         visualization, and automated reporting.
 
 
-      <div class="about-table">
-
-      <div class="about-row">
+    <div class="about-grid">
     
-        <div class="about-label">
-          Financial & Economic Data
-        </div>
+      <div class="about-card">
     
-        <div class="about-value">
+        <h3>Financial & Economic Data</h3>
+    
+        <p>
           Financial statements, ratios,
           stock returns, macroeconomic indicators
-        </div>
+        </p>
     
       </div>
     
-      <div class="about-row">
+      <div class="about-card">
     
-        <div class="about-label">
-          Statistical Techniques
-        </div>
+        <h3>Statistical Techniques</h3>
     
-        <div class="about-value">
+        <p>
           Linear regression, time series,
           correlation analysis
-        </div>
+        </p>
     
       </div>
     
-      <div class="about-row">
+      <div class="about-card">
     
-        <div class="about-label">
-          AI & Automation
-        </div>
+        <h3>AI & Automation</h3>
     
-        <div class="about-value">
+        <p>
           AI workflow automation,
           prompt engineering,
           operational efficiency improvement
-        </div>
+        </p>
     
       </div>
+    
+    </div>
     
     </div>
       </p>
