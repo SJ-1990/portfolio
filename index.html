@@ -181,22 +181,26 @@
     }
 
     .hero-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+  
+    background: url("Marketing analytics.gif");
+    background-size: cover;
+    background-position: center;
+  
+    opacity: 0.15;
+  
+    z-index: 0;
+  }
 
-  background: url("Marketing analytics.gif");
-  background-size: cover;
-  background-position: center;
-
-  opacity: 0.15;
-
-  z-index: 0;
-}
-
-.hero-bg .container {
-  position: relative;
-  z-index: 2;
+  .hero-bg {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    color: white;
+    padding: 70px 0;
+  }
 }
 
     @media (max-width: 768px) {
