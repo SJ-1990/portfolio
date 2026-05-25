@@ -3,257 +3,321 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Supattra Portfolio</title>
 
   <style>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
     }
 
-    body {
-      background: #f5f7fb;
-      color: #1f2937;
-      line-height: 1.6;
+    /* BODY BACKGROUND */
+
+    body.main-bg{
+
+      background:
+        linear-gradient(
+          rgba(245,247,251,0.94),
+          rgba(245,247,251,0.96)
+        ),
+
+        url("magnific__talk__92910.png");
+
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+
+      color:#1f2937;
+      line-height:1.6;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
     }
 
     /* HEADER */
 
-header{
-  position: relative;
+    header{
+      background:linear-gradient(135deg,#0f172a,#1e3a5f);
+      color:white;
+      padding:90px 0;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
 
-  background:
-    linear-gradient(
-      rgba(15,23,42,0.88),
-      rgba(30,58,95,0.92)
-    ),
-
-    url("magnific__talk__92910.png");
-
-  background-size: cover;
-  background-position: center;
-
-  color: white;
-
-  padding: 90px 0;
-}
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .hero{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
     }
 
     /* TITLE */
 
-    .hero-title {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
+    .hero-title{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
     }
 
-    .hero-title h1 {
-      font-size: 58px;
-      font-weight: 700;
+    .hero-title h1{
+      font-size:58px;
+      font-weight:700;
+      letter-spacing:-1px;
     }
 
-    .title-gif {
-      width: 110px;
-      border-radius: 14px;
-      box-shadow: 0 0 25px rgba(56, 189, 248, 0.35);
+    .title-gif{
+      width:110px;
+      border-radius:14px;
+      box-shadow:0 0 25px rgba(56,189,248,0.35);
     }
 
     /* HERO TEXT */
 
-    .hero p {
-      font-size: 20px;
-      max-width: 760px;
-      color: #dbe4f0;
+    .hero p{
+      font-size:20px;
+      max-width:760px;
+      color:#dbe4f0;
+      line-height:1.9;
     }
 
     /* BUTTONS */
 
-    .btn-group {
-      margin-top: 10px;
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
+    .btn-group{
+      margin-top:10px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 13px 22px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+    .btn{
+      display:inline-block;
+      padding:13px 22px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
     }
 
-    .btn-primary {
-      background: #38bdf8;
-      color: #0f172a;
+    .btn-primary{
+      background:#38bdf8;
+      color:#0f172a;
     }
 
-    .btn-primary:hover {
-      background: #7dd3fc;
+    .btn-primary:hover{
+      background:#7dd3fc;
+      transform:translateY(-2px);
     }
 
-    .btn-secondary {
-      border: 1px solid #cbd5e1;
-      color: white;
+    .btn-secondary{
+      border:1px solid #cbd5e1;
+      color:white;
     }
 
-    .btn-secondary:hover {
-      background: rgba(255,255,255,0.08);
+    .btn-secondary:hover{
+      background:rgba(255,255,255,0.08);
     }
 
     /* SECTION */
 
-    section {
-      padding: 70px 0;
+    section{
+      padding:80px 0;
     }
 
-    h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #0f172a;
+    h2{
+      font-size:34px;
+      margin-bottom:25px;
+      color:#0f172a;
     }
 
-    .about p {
-      max-width: 900px;
-      color: #374151;
-      font-size: 17px;
+    /* ABOUT */
+
+    .about p{
+      max-width:920px;
+      color:#374151;
+      font-size:17px;
+      line-height:2;
+      letter-spacing:0.2px;
     }
 
     /* SKILLS */
 
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:25px;
     }
 
-    .skill-tag {
-      background: white;
-      border: 1px solid #dbe2ea;
-      padding: 10px 15px;
-      border-radius: 20px;
-      font-size: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    .skill-tag{
+      background:rgba(255,255,255,0.82);
+
+      backdrop-filter:blur(8px);
+
+      border:1px solid rgba(255,255,255,0.35);
+
+      padding:12px 18px;
+
+      border-radius:20px;
+
+      font-size:14px;
+
+      box-shadow:
+        0 4px 12px rgba(0,0,0,0.05);
+
+      transition:0.3s;
+    }
+
+    .skill-tag:hover{
+      transform:translateY(-3px);
     }
 
     /* PROJECTS */
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-      gap: 20px;
-      margin-top: 25px;
+    .projects-grid{
+      display:grid;
+      grid-template-columns:
+      repeat(auto-fit,minmax(280px,1fr));
+
+      gap:24px;
+      margin-top:30px;
     }
 
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 6px 18px rgba(15,23,42,0.08);
-      border: 1px solid #e5e7eb;
-      transition: 0.3s;
+    .card{
+
+      background:rgba(255,255,255,0.82);
+
+      backdrop-filter:blur(10px);
+
+      border:1px solid rgba(255,255,255,0.4);
+
+      border-radius:18px;
+
+      padding:28px;
+
+      box-shadow:
+        0 8px 24px rgba(15,23,42,0.08);
+
+      transition:0.35s;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    .card:hover{
+      transform:translateY(-6px);
     }
 
-    .card h3 {
-      margin-bottom: 10px;
-      color: #0f172a;
-      font-size: 20px;
+    .card h3{
+      margin-bottom:12px;
+      color:#0f172a;
+      font-size:21px;
     }
 
-    .card p {
-      color: #4b5563;
-      font-size: 15px;
-      margin-bottom: 12px;
+    .card p{
+      color:#4b5563;
+      font-size:15px;
+      margin-bottom:14px;
+      line-height:1.8;
     }
 
-    .card ul {
-      padding-left: 18px;
-      color: #374151;
-      font-size: 14px;
-      margin-bottom: 15px;
+    .card ul{
+      padding-left:18px;
+      color:#374151;
+      font-size:14px;
+      line-height:1.9;
     }
 
     /* EXPERIENCE */
 
-    .experience-box {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 6px 18px rgba(15,23,42,0.08);
-      border: 1px solid #e5e7eb;
+    .experience-box{
+
+      background:rgba(255,255,255,0.82);
+
+      backdrop-filter:blur(10px);
+
+      border:1px solid rgba(255,255,255,0.4);
+
+      border-radius:18px;
+
+      padding:28px;
+
+      box-shadow:
+        0 8px 24px rgba(15,23,42,0.08);
     }
 
-    .experience-box ul {
-      padding-left: 20px;
-      color: #374151;
+    .experience-box ul{
+      padding-left:20px;
+      color:#374151;
+      line-height:2;
+    }
+
+    .experience-box a{
+      color:#2563eb;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .experience-box a:hover{
+      text-decoration:underline;
     }
 
     /* CONTACT */
 
-    .contact {
-      text-align: center;
-      background: #0f172a;
-      color: white;
-      padding: 70px 20px;
-      margin-top: 40px;
+    .contact{
+      text-align:center;
+
+      background:
+      linear-gradient(135deg,#0f172a,#1e3a5f);
+
+      color:white;
+
+      padding:80px 20px;
+
+      margin-top:50px;
     }
 
-    .contact p {
-      margin: 10px 0;
-      color: #d1d5db;
+    .contact p{
+      margin:12px 0;
+      color:#d1d5db;
+      font-size:16px;
     }
 
-    .contact a {
-      color: #38bdf8;
-      text-decoration: none;
+    .contact a{
+      color:#38bdf8;
+      text-decoration:none;
     }
 
     /* FOOTER */
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #6b7280;
+    footer{
+      text-align:center;
+      padding:20px;
+      font-size:14px;
+      color:#6b7280;
     }
 
     /* MOBILE */
 
-    @media (max-width: 768px) {
+    @media(max-width:768px){
 
-      .hero-title h1 {
-        font-size: 38px;
+      .hero-title h1{
+        font-size:38px;
       }
 
-      .title-gif {
-        width: 80px;
+      .title-gif{
+        width:80px;
       }
 
-      .hero p {
-        font-size: 16px;
+      .hero p{
+        font-size:16px;
+      }
+
+      h2{
+        font-size:28px;
       }
 
     }
@@ -262,7 +326,7 @@ header{
 
 </head>
 
-<body>
+<body class="main-bg">
 
   <!-- HEADER -->
 
@@ -274,14 +338,16 @@ header{
 
         <h1>Supattra Jairew</h1>
 
-        <img src="marketing-analytics.gif"
-             class="title-gif"
-             alt="analytics gif">
+        <img
+          src="marketing-analytics.gif"
+          class="title-gif"
+          alt="analytics gif">
 
       </div>
 
       <p>
-        Always excited and fulfilled by solving complex data challenges, even in high-pressure environments
+        Always excited and fulfilled by solving complex data challenges,
+        even in high-pressure environments.
       </p>
 
       <div class="btn-group">
@@ -309,11 +375,32 @@ header{
       <h2>About Me</h2>
 
       <p>
-    Data Analytics professional with 6+ years of experience in end-to-end data workflows, including data cleaning, transformation, visualization, and automated reporting. 
-        <br><br>Strong expertise in financial and economic data, covering financial statements, ratios, stock returns, and macroeconomic indicators. 
-        Experienced in applying statistical techniques such as linear regression, time series, and correlation analysis to generate data-driven insights. <br><br>Skilled in Python, SQL, Excel VBA, and Power BI for building scalable analytics solutions.
-    
-    <br><br>Also experienced in leveraging AI and prompt engineering for over 2 years to reduce operational pain points, improve workflow efficiency, and support automation initiatives.
+
+        Data Analytics professional with 6+ years of experience
+        in end-to-end data workflows, including data cleaning,
+        transformation, visualization, and automated reporting.
+
+        <br><br>
+
+        Strong expertise in financial and economic data,
+        covering financial statements, ratios, stock returns,
+        and macroeconomic indicators.
+
+        Experienced in applying statistical techniques such as
+        linear regression, time series, and correlation analysis
+        to generate data-driven insights.
+
+        <br><br>
+
+        Skilled in Python, SQL, Excel VBA, and Power BI
+        for building scalable analytics solutions.
+
+        <br><br>
+
+        Also experienced in leveraging AI and prompt engineering
+        for over 2 years to reduce operational pain points,
+        improve workflow efficiency, and support automation initiatives.
+
       </p>
 
     </div>
@@ -336,7 +423,7 @@ header{
         <div class="skill-tag">Python</div>
         <div class="skill-tag">SQL</div>
         <div class="skill-tag">Power BI</div>
-        <div class="skill-tag">Excel</div>
+        <div class="skill-tag">Excel VBA</div>
         <div class="skill-tag">Dashboard Development</div>
         <div class="skill-tag">Data Visualization</div>
         <div class="skill-tag">Research Automation</div>
@@ -439,44 +526,42 @@ header{
 
   </section>
 
-   <!-- LICENSES & CERTIFICATIONS -->
+  <!-- LICENSE -->
 
   <section>
 
     <div class="container">
 
-      <h2>LICENSES & CERTIFICATIONS</h2>
+      <h2>Licenses & Certifications</h2>
 
       <div class="experience-box">
 
         <ul>
+
           <li>
-            Fundamental Investment Analyst on Capital Market
-            -
-            <a href="https://market.sec.or.th/public/orap/IC02.aspx?PersonRunId=0000086096&lang=en" target="_blank">
+            Fundamental Investment Analyst on Capital Market —
+            <a href="https://market.sec.or.th/public/orap/IC02.aspx?PersonRunId=0000086096&lang=en"
+               target="_blank">
               View License
             </a>
           </li>
+
           <li>
-            Complex Type 1 Investment Consultant
-            -
-            <a href="https://market.sec.or.th/public/orap/IC02.aspx?PersonRunId=0000086096&lang=en" target="_blank">
+            Complex Type 1 Investment Consultant —
+            <a href="https://market.sec.or.th/public/orap/IC02.aspx?PersonRunId=0000086096&lang=en"
+               target="_blank">
               View License
             </a>
           </li>
-          
+
           <li>
-            Data Analyst in Python – DataCamp (2025)
-            -
-            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/055743b2e2760e27b44683c984c355be465c5661?utm_source=customerio&utm_medium=email&utm_campaign=220930_1-complete-track_2-b2c_3-all_4-na_5-na_6-completetrac_7-ct_8-emal-ci_9-na_10-bau_11-email&utm_content=auto" target="_blank">
-              View License
+            Data Analyst in Python – DataCamp —
+            <a href="https://www.datacamp.com/"
+               target="_blank">
+              View Certificate
             </a>
           </li>
-          <li>
-            Associate Data Analyst in SQL
-            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/614b7ced1b776a2f9dbb9cf21f3fe19fb0c07bee?utm_source=customerio&utm_medium=email&utm_campaign=220930_1-complete-track_2-b2c_3-all_4-na_5-na_6-completetrac_7-ct_8-emal-ci_9-na_10-bau_11-email&utm_content=auto" target="_blank">
-              View License
-            </a>
+
         </ul>
 
       </div>
@@ -484,23 +569,20 @@ header{
     </div>
 
   </section>
-  
-    <!-- Languages -->
-  
-   <section>
+
+  <!-- LANGUAGE -->
+
+  <section>
 
     <div class="container">
 
       <h2>Languages</h2>
 
-      <div class="languages-box">
+      <div class="experience-box">
 
         <ul>
           <li>Thai (Native)</li>
-          <li>English (Intermediate – TOEIC 625) 
- 
-        </li>
-          
+          <li>English (Intermediate – TOEIC 625)</li>
         </ul>
 
       </div>
@@ -509,8 +591,7 @@ header{
 
   </section>
 
-
-    <!-- CONTACT -->
+  <!-- CONTACT -->
 
   <section id="contact" class="contact">
 
@@ -520,8 +601,9 @@ header{
 
     <p>
       GitHub:
-      <a href="https://github.com/SJ-1990" target="_blank">
-        github.com/SJ-1990
+      <a href="https://github.com/SJ-1990"
+         target="_blank">
+         github.com/SJ-1990
       </a>
     </p>
 
@@ -529,7 +611,7 @@ header{
       LinkedIn:
       <a href="https://www.linkedin.com/in/supattra-jairew-68b7842a4"
          target="_blank">
-        View LinkedIn
+         View LinkedIn
       </a>
     </p>
 
@@ -538,7 +620,7 @@ header{
   <!-- FOOTER -->
 
   <footer>
-    <p>© 2026 Supattra Portfolio</p>
+    © 2026 Supattra Portfolio
   </footer>
 
 </body>
