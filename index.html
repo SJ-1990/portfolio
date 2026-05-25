@@ -187,6 +187,70 @@
       letter-spacing:0.2px;
     }
 
+    /* ABOUT TABLE */
+    
+    .about-table{
+    
+      margin-top:40px;
+    
+      display:flex;
+    
+      flex-direction:column;
+    
+      gap:18px;
+    }
+    
+    .about-row{
+    
+      display:grid;
+    
+      grid-template-columns:240px 1fr;
+    
+      gap:24px;
+    
+      padding:18px 22px;
+    
+      background:
+      rgba(255,255,255,0.72);
+    
+      border:
+      1px solid rgba(255,255,255,0.4);
+    
+      border-radius:14px;
+    
+      backdrop-filter:blur(8px);
+    
+      box-shadow:
+      0 4px 12px rgba(0,0,0,0.04);
+    }
+    
+    .about-label{
+    
+      font-weight:700;
+    
+      color:#0f172a;
+    }
+    
+    .about-value{
+    
+      color:#374151;
+    
+      line-height:1.8;
+    }
+    
+    /* MOBILE */
+    
+    @media(max-width:768px){
+    
+      .about-row{
+    
+        grid-template-columns:1fr;
+    
+        gap:10px;
+      }
+    
+    }
+    
     /* SKILLS */
 
     .skills{
