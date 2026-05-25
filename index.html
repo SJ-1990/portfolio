@@ -18,23 +18,19 @@
 
    /* BODY BACKGROUND */
 
-    body.main-bg{
-    
-      background:
-        linear-gradient(
-          rgba(245,247,251,0.90),
-          rgba(245,247,251,0.94)
-        ),
-    
-        url("./data-bg.png");
-    
+    /* แก้ไขจากเดิม เป็นการแยกบรรทัดให้ชัดเจน */
+  body.main-bg {
+      /* ใส่ Gradient */
+      background-image: linear-gradient(rgba(245,247,251,0.90), rgba(245,247,251,0.94)), url("data-bg.png");
+      
+      /* ค่าอื่นๆ ที่เหลือเหมือนเดิม */
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       background-repeat: no-repeat;
-    
-      color:#1f2937;
-      line-height:1.6;
+      
+      color: #1f2937;
+      line-height: 1.6;
     }
 
     .container{
