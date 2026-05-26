@@ -53,52 +53,90 @@
     
 
     /* HEADER */
-
-    /* HERO */
+    
+    /* ========================= */
+    /* HERO SECTION */
+    /* ========================= */
     
     header{
-      background:linear-gradient(135deg,#081225,#17345f);
+    
+      background:
+      linear-gradient(135deg,#081225,#17345f);
+    
       color:white;
+    
       padding:70px 0 90px;
+    
     }
     
-    /* HERO LAYOUT */
+    /* CONTAINER */
+    
+    .container{
+      width:92%;
+      max-width:1400px;
+      margin:auto;
+    }
+    
+    /* HERO */
     
     .hero{
+    
       display:flex;
+    
       flex-direction:column;
+    
       gap:28px;
     }
     
+    /* ========================= */
     /* TITLE */
+    /* ========================= */
     
     .hero-title{
+    
       display:flex;
+    
       align-items:center;
-      gap:30px;
-      flex-wrap:wrap;
+    
+      gap:28px;
+    
+      flex-wrap:nowrap;
     }
     
     .hero-title h1{
-      font-size:88px;
+    
+      font-size:78px;
+    
       font-weight:800;
+    
       line-height:1;
+    
+      color:white;
     }
+    
+    /* GIF */
     
     .title-gif{
-      width:170px;
-      border-radius:20px;
-      box-shadow:0 0 35px rgba(56,189,248,0.35);
+    
+      width:150px;
+    
+      border-radius:18px;
+    
+      box-shadow:
+      0 0 35px rgba(56,189,248,0.30);
     }
     
+    /* ========================= */
     /* BADGE */
+    /* ========================= */
     
     .hero-badge{
+    
       width:fit-content;
     
-      background:#e7f7ef;
+      background:#edf8f1;
     
-      color:#138a63;
+      color:#16805d;
     
       padding:10px 22px;
     
@@ -106,173 +144,201 @@
     
       font-size:18px;
     
-      font-weight:600;
+      font-weight:700;
     }
     
+    /* ========================= */
     /* HERO TEXT */
+    /* ========================= */
     
     .hero-text{
+    
       font-size:22px;
-      color:#e5edf8;
+    
+      color:#e7edf8;
+    
       line-height:1.8;
+    
+      max-width:1200px;
     }
     
+    /* ========================= */
     /* ABOUT BOX */
+    /* ========================= */
     
     .about-box{
     
-      background:rgba(13,28,52,0.72);
+      background:
+      rgba(10,25,50,0.75);
     
-      border:1px solid rgba(255,255,255,0.08);
+      border:
+      1px solid rgba(255,255,255,0.08);
     
       border-radius:24px;
     
-      padding:38px;
+      padding:42px;
     
       backdrop-filter:blur(12px);
-    
     }
     
     /* ABOUT TITLE */
     
     .about-box h3{
-      font-size:38px;
-      margin-bottom:22px;
+    
+      font-size:42px;
+    
       color:#4ade80;
+    
+      margin-bottom:24px;
     }
     
     /* ABOUT DESC */
     
-    .about-box > p{
+    .about-desc{
+    
       font-size:20px;
+    
       line-height:1.9;
-      color:#dce6f5;
-      margin-bottom:35px;
+    
+      color:#dce7f7;
+    
+      margin-bottom:34px;
     }
     
-    /* ABOUT GRID */
+    /* ========================= */
+    /* GRID */
+    /* ========================= */
     
     .about-grid{
+    
       display:grid;
     
       grid-template-columns:
-      repeat(auto-fit,minmax(260px,1fr));
+      repeat(3,1fr);
     
-      gap:30px;
+      gap:40px;
     
       border-top:
       1px solid rgba(255,255,255,0.08);
     
-      padding-top:30px;
+      padding-top:35px;
     }
     
-    /* ABOUT ITEM */
+    /* ITEM */
     
     .about-item h4{
+    
       font-size:26px;
+    
       margin-bottom:14px;
+    
       color:white;
     }
     
     .about-item p{
-      color:#d1d9e6;
-      line-height:1.9;
+    
       font-size:17px;
+    
+      line-height:1.9;
+    
+      color:#d5dfed;
     }
     
+    /* ========================= */
     /* BUTTON */
+    /* ========================= */
     
     .btn-group{
+    
       display:flex;
-      gap:20px;
+    
+      gap:18px;
+    
       margin-top:10px;
     }
-    /* SECTION */
-
-    section{
-      padding:50px 0;
-    }
-
-    h2{
-      font-size:34px;
-      margin-bottom:25px;
-      color:#0f172a;
-    }
-
-    /* ABOUT */
-
-    .about p{
-
-      max-width:920px;
-
-      color:#374151;
-
-      font-size:17px;
-
-      line-height:2;
-
-      letter-spacing:0.2px;
-    }
-
-    /* ABOUT GRID */
     
-    .about-grid{
-      display:flex;
-      flex-direction:column;
-      gap:22px;
-      margin-top:40px;
-    }
+    .btn{
     
-    .about-card{
-      width:100%;
-    }
+      display:inline-block;
     
-    .about-card{
+      padding:16px 30px;
     
-      background:
-      rgba(255,255,255,0.78);
+      border-radius:14px;
     
-      backdrop-filter:blur(10px);
+      text-decoration:none;
     
-      border:
-      1px solid rgba(255,255,255,0.4);
-    
-      border-radius:18px;
-    
-      padding:28px;
-    
-      box-shadow:
-      0 6px 16px rgba(0,0,0,0.05);
+      font-weight:700;
     
       transition:0.3s;
     }
     
-    .about-card:hover{
+    /* PRIMARY */
     
-      transform:translateY(-4px);
+    .btn-primary{
+    
+      background:#0f172a;
+    
+      color:white;
+    
+      border:
+      1px solid rgba(255,255,255,0.12);
     }
     
-    .about-card h3{
+    .btn-primary:hover{
     
-      font-size:24px;
+      background:#172554;
     
-      margin-bottom:16px;
-    
-      color:#0f172a;
+      transform:translateY(-2px);
     }
     
-    .about-card p{
+    /* SECONDARY */
     
-      color:#4b5563;
+    .btn-secondary{
     
-      line-height:1.9;
+      border:
+      1px solid rgba(255,255,255,0.50);
     
-      font-size:16px;
-    }
-    .about-card{
-      width:100%;
+      color:white;
     }
     
+    .btn-secondary:hover{
+    
+      background:
+      rgba(255,255,255,0.08);
+    }
+    
+    /* ========================= */
+    /* MOBILE */
+    /* ========================= */
+    
+    @media(max-width:900px){
+    
+      .hero-title{
+    
+        flex-wrap:wrap;
+      }
+    
+      .hero-title h1{
+    
+        font-size:54px;
+      }
+    
+      .title-gif{
+    
+        width:110px;
+      }
+    
+      .about-grid{
+    
+        grid-template-columns:1fr;
+      }
+    
+      .hero-text{
+    
+        font-size:18px;
+      }
+    
+    }
     /* SKILLS */
 
     .skills{
@@ -870,15 +936,15 @@
 
 <body class="main-bg">
 
-  <!-- HEADER -->
-
-  <!-- HERO -->
+  <!-- ========================= -->
+  <!-- HERO SECTION -->
+  <!-- ========================= -->
   
   <header>
   
     <div class="container hero">
   
-      <!-- NAME + IMAGE -->
+      <!-- NAME + GIF -->
   
       <div class="hero-title">
   
@@ -891,7 +957,7 @@
   
       </div>
   
-      <!-- ROLE TAG -->
+      <!-- ROLE BADGE -->
   
       <div class="hero-badge">
         Data Analyst · Investment Research · AI Tools
@@ -900,8 +966,8 @@
       <!-- HERO TEXT -->
   
       <p class="hero-text">
-        Always excited and fulfilled by solving complex data challenges,
-        even in high-pressure environments.
+        Always excited and fulfilled by solving complex
+        data challenges, even in high-pressure environments.
       </p>
   
       <!-- ABOUT BOX -->
@@ -910,15 +976,19 @@
   
         <h3>About Me</h3>
   
-        <p>
+        <p class="about-desc">
+  
           Data Analytics professional with 6+ years of experience
           in end-to-end data workflows, including data cleaning,
           transformation, visualization, and automated reporting.
+  
         </p>
   
-        <!-- ABOUT GRID -->
+        <!-- GRID -->
   
         <div class="about-grid">
+  
+          <!-- ITEM -->
   
           <div class="about-item">
   
@@ -931,6 +1001,8 @@
   
           </div>
   
+          <!-- ITEM -->
+  
           <div class="about-item">
   
             <h4>Statistical Techniques</h4>
@@ -941,6 +1013,8 @@
             </p>
   
           </div>
+  
+          <!-- ITEM -->
   
           <div class="about-item">
   
@@ -975,41 +1049,7 @@
     </div>
   
   </header>
-  <!-- ABOUT -->
-
-  <section class="about">
-
-    <div class="container">
-
-      <h2>About Me</h2>
-
-      <p>
-
-        Data Analytics professional with 6+ years
-        of experience in end-to-end data workflows,
-        including data cleaning, transformation,
-        visualization, and automated reporting.
-      </p>
-
-      <p>
-          Financial & Economic Data Financial statements, ratios,
-          stock returns, macroeconomic indicators
-      </p>
-       
-      <p>
-         Statistical Techniques Linear regression, time series,
-          correlation analysis
-       </p>
-    
-        <p>
-          AI & Automation AI workflow automation,
-          prompt engineering,
-          operational efficiency improvement
-        </p>
-       
-    </div>
   
-
   <!-- SKILLS -->
 
   <section>
